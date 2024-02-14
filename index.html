@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background: #333;
+        padding: 180px;
+        display: block;
+      }
+
+      label {
+        font-size: 20px;
+        color: #fff;
+      }
+
+      input {
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 30px;
+
+        background-color: bisque;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 600;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello User! Welcome</h1>
+    <form action="" id="form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="enter name" /><br />
+      <label for="mobile">Mobile</label>
+      <input
+        maxlength="10"
+        id="mobile"
+        name="mobile"
+        type="number"
+        pattern="\d{10}"
+        placeholder="enter mobile"
+      /><br />
+
+      <button type="button" id="bt">Submit</button>
+    </form>
+
+    <script>
+      const say = () => {
+        alert("Working Button using JS");
+      };
+
+      let button1 = document.getElementById("form");
+      button1.addEventListener("click", say);
+    </script>
+  </body>
+</html>
