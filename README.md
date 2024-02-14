@@ -1,6 +1,6 @@
-# FORM NEW
+# JavaScript All in One
 
-This is the form code I made to learn JavaScript.
+This is the form code I made to learn JavaScript. Learning the technologies.
 
 ## Usage
 
